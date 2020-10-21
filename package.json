@@ -1,0 +1,53 @@
+{
+  "name": "foodtruck-api",
+  "version": "0.0.1",
+  "description": "foodtruck API for bizzsoln RESTful API Course",
+  "main": "dist",
+  "scripts": {
+    "dev": "babel-node src --presets @babel/preset-env",
+    "temp": "nodemon -w src --exec \"babel-node src --presets @babel/preset-env\"",
+    "build": "babel src -s -D -d dist --presets @babel/preset-env",
+    "start": "NODE_ENV=production pm2 start dist",
+    "prestart": "npm run -s build",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "author": "eedris S",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "body-parser": "^1.19.0",
+    "eslint": "^7.10.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/cli": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.10.0",
+    "nodemon": "^2.0.4"
+  }
+}

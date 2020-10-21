@@ -1,0 +1,23 @@
+Digital Ocean setup
+
+Usr: eeedris@gmail.com	
+pwd: <<login using gmail>>
+
+security:
+- ubuntu image
+- initial loging:  ssh -i ~/.ssh/id_rsa root@111.11.11.111
+- pwd: Ad!gun83Omoola or Phrase: Spa$$222@
+- //{project folder}/.ssh/{get keypairs} 
+
+
+initial commands to initialize servers
+- sudo apt-get update
+- sudo apt-get upgrade
+
+note for linux setup: 
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04?utm_source=local&utm_medium=Email_Internal&utm_campaign=Email_UbuntuDistroNginxWelcome&mkt_tok=eyJpIjoiWmpJME1qWXpNbVExWmpCaiIsInQiOiJpSUd2VFNiamRIM09iVm5zQzVWaUlneUNZY2ZjNlNFaFhZZG1ZVm83THFBRHhrZEh5YmYxRFM3XC9heU1qdXYwaklldzk2V09teUNWNGthZUQ5Y0FCbTNNaWpSNmh3UHNncGEwQWU0WGNCa2VtR3h1anBSWEpUU1wvVERcL3lIN09qTyJ9
+
+Users:
+-----
+eedris
+apisuer
